@@ -13,19 +13,19 @@ const SET_SEAT = "ticket/SET_SEAT";
 const SET_GATE = "ticket/SET_GATE";
 
 // 액션 함수
-export const SetAirLine = (name) => ({
+export const SetAirLine = (airline) => ({
   type: SET_AIR_LINE,
-  name,
+  airline,
 });
 
-export const SetSeatClass = (seat_class) => ({
+export const SetSeatClass = (seatclass) => ({
   type: SET_SEAT_CLASS,
-  seat_class,
+  seatclass,
 });
 
-export const SetLoungeClass = (lounge_class) => ({
+export const SetLoungeClass = (loungeclass) => ({
   type: SET_LOUNGE_CLASS,
-  lounge_class,
+  loungeclass,
 });
 
 export const SetFlight = (flight) => ({
@@ -53,14 +53,14 @@ export const SetDate = (date) => ({
   date,
 });
 
-export const SetBoardingTime = (boarding_time) => ({
+export const SetBoardingTime = (boardingtime) => ({
   type: SET_BOARDING_TIME,
-  boarding_time,
+  boardingtime,
 });
 
-export const SetDepTime = (dep_time) => ({
+export const SetDepTime = (deptime) => ({
   type: SET_DEP_TIME,
-  dep_time,
+  deptime,
 });
 
 export const SetSeat = (seat) => ({
@@ -76,7 +76,7 @@ export const SetGate = (gate) => ({
 // 초기 state 정의
 // 배열이 아닌 객체로 선언해야한다.
 const InitialState = {
-  airline: "My Air Line",
+  airline: "My AirLine",
   seatclass: "PRESTIGE",
   loungeclass: "VVIP",
   flight: "KE 11",
@@ -96,6 +96,8 @@ export default function ticket(state = InitialState, action) {
   // 액션 타입 확인.
   switch (action.type) {
     case SET_AIR_LINE:
+      console.log(action.airline);
+
       return {
         ...state,
         airline: action.airline,
