@@ -1,10 +1,10 @@
 import "./App.css";
-import Ticket from "./components/Ticket";
+import TicketContainer from "./containers/TicketContainer";
 
 function App() {
   return (
     <div className="App">
-      <Ticket></Ticket>
+      <TicketContainer></TicketContainer>
     </div>
   );
 }
