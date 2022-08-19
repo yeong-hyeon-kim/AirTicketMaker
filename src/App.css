@@ -1,0 +1,108 @@
+.App {
+    align-content: center;
+    padding: 20px;
+    width: 95vw;
+}
+
+.Backplate {
+    background-color: #FFF4E0;
+    width: 90vw;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.Header {
+    height: 6vh;
+    background-color: #9FE8FA;
+    color: #000;
+    line-height: 4vh;
+    padding: 5px;
+    display: grid;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+}
+
+.Stage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.StageGridOne {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.StageGridTwo {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+.StageGridThree {
+    grid-column: 4 / 4;
+    grid-row: 1;
+}
+
+.HeaderGridOne {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.HeaderGridTwo {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.HeaderGridThree {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+.HeaderGridFour {
+    grid-column: 4 / 4;
+    grid-row: 1;
+}
+
+.ItemGroup{
+    display: flex;
+    font-weight: 100;
+    
+}
+
+.ArrivalTable {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 30vw;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.SeatTable {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 25vw;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+hr {
+    background-color: #26BAEE;
+    border-style: none;
+    height: 2vh;
+    margin: 0px;
+}
+
+p {
+    margin: 5px;
+}
+
+th,
+td {
+    text-align: center;
+    border: 1px solid #000;
+}
