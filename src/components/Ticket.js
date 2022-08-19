@@ -1,12 +1,27 @@
-function Ticket() {
+import React from "react";
+
+function Ticket({
+  AirLine,
+  SeatClass,
+  LoungeClass,
+  Flight,
+  Name,
+  From,
+  To,
+  Date,
+  BoardingTime,
+  DepTime,
+  Seat,
+  Gate,
+}) {
   return (
     <div className="Backplate">
       <header className="Header">
         <div className="HeaderGridOne">
-          <h3>My Airline ✈️</h3>
+          <h3>{AirLine}✈️</h3>
         </div>
         <div className="HeaderGridTwo">
-          <h3>PRESTIGE</h3>
+          <h3>{SeatClass}</h3>
         </div>
         <div className="HeaderGridThree">
           <h3>탑승권</h3>
@@ -22,28 +37,28 @@ function Ticket() {
             <p>NAME&nbsp;</p>
             <p>ㅤ</p>
             <p>
-              <b>KIM I NA</b>
+              <b>{Name}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>FLIGHT</p>
             <p>ㅤ</p>
             <p>
-              <b>KE 011</b>
+              <b>{Flight}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>FROM&nbsp;</p>
             <p>ㅤ</p>
             <p>
-              <b>INC</b>
+              <b>{From}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>TO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <p>ㅤ</p>
             <p>
-              <b>LHR</b>
+              <b>{To}</b>
             </p>
           </div>
           <div className="ItemGroup">
@@ -52,15 +67,15 @@ function Ticket() {
                 <tr>
                   <td>
                     <p>BOARDING</p>
-                    <h2>19 : 30</h2>
+                    <h2>{BoardingTime}</h2>
                   </td>
                   <td>
                     <p>GATE</p>
-                    <h2>10</h2>
+                    <h2>{Gate}</h2>
                   </td>
                   <td>
                     <p>DEP TIME</p>
-                    <h2>01 : 00</h2>
+                    <h2>{DepTime}</h2>
                   </td>
                 </tr>
               </tbody>
@@ -70,7 +85,7 @@ function Ticket() {
             <p>PR LOUNGE SERVICE</p>
             <p>ㅤ</p>
             <p>
-              <b>VVIP</b>
+              <b>{LoungeClass}</b>
             </p>
           </div>
           <div className="ItemGroup"></div>
@@ -83,28 +98,28 @@ function Ticket() {
             <p>NAME</p>
             <p>ㅤ</p>
             <p>
-              <b>KIM I NA</b>
+              <b>{Name}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>FROM</p>
             <p>ㅤ</p>
             <p>
-              <b>INC</b>
+              <b>{From}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>TO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <p>ㅤ</p>
             <p>
-              <b>LHR</b>
+              <b>{To}</b>
             </p>
           </div>
           <div className="ItemGroup">
             <p>DATE&nbsp;</p>
             <p>ㅤ</p>
             <p>
-              <b>30 JAN 2022</b>
+              <b>{Date}</b>
             </p>
           </div>
           <div className="ItemGroup">
@@ -113,11 +128,11 @@ function Ticket() {
                 <tr>
                   <td>
                     <p>Seat</p>
-                    <h2>A1</h2>
+                    <h2>{Seat}</h2>
                   </td>
                   <td>
                     <p>Flight</p>
-                    <h2>A380</h2>
+                    <h2>{Flight}</h2>
                   </td>
                 </tr>
               </tbody>
