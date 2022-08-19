@@ -85,6 +85,18 @@ function TicketContainer() {
       DepTime={deptime}
       Seat={seat}
       Gate={gate}
+      onSetAirLine={setAirLine}
+      onSetSeatClass={setSeatClass}
+      onSetLoungeClass={setLoungeClass}
+      onSetFlight={setFlight}
+      onSetName={setName}
+      onSetFrom={setFrom}
+      onSetTo={setTo}
+      onSetDate={setDate}
+      onSetBoardingTime={setBoardingTime}
+      onSetDepTime={setDepTime}
+      onSetSeat={setSeat}
+      onSetGate={setGate}
     ></Ticket>
   );
 }
