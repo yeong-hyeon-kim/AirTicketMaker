@@ -29,10 +29,10 @@
 
 ### 시스템 환경(System Environment)
 
-||운영체제(OS)|언어(Language)|프레임워크(Framework)|
-|-|:-:|:-:|:-:|
-|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|
-|버전(Version)|`10`, `11`|`ES6`|`18.2.0`|
+||운영체제(OS)|언어(Language)|프레임워크(Framework)|라이브러리(Library)
+|-|:-:|:-:|:-:|:-:|
+|명칭(Name)|![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows&logoColor=white)|![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)|![REACT](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=black)|![REDUX](https://img.shields.io/badge/REDUX-764ABC?style=flat-square&logo=Redux&logoColor=white)|
+|버전(Version)|`10`, `11`|`ES6`|`18.2.0`|`8.0.2`|
 
 ### 브라우저 지원(Browser Support)
 
