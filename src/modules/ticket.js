@@ -90,7 +90,7 @@ const InitialState = {
   gate: "10",
 };
 
-// 리듀서
+// 리듀서(Reducer)
 export default function ticket(state = InitialState, action) {
   console.log(state);
   // 액션 타입 확인.
